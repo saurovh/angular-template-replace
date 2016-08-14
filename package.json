@@ -1,7 +1,7 @@
 {
   "name": "angular-template-replace",
   "description": "this for replacing angular templateUrl : '/path/to/template' to its content like template : 'html cotent'",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/saurvoh/angular-template-replace",
   "author": {
     "name": "Fisherman",
