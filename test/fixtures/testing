@@ -2,9 +2,9 @@ function rgImageComments() {
         return {
             restrict: 'E',
             controller : CommentsController,
-            //templateUrl: 'test/fixtures/123',
-			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>',
-			scope : {
+            // templateUrl: 'test/fixtures/123',
+			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>',
+						scope : {
                 target : '=',
                 showCommentBox : '=',
                 commentType : '@', // string feed,image,media
@@ -28,22 +28,18 @@ function rgImageComments() {
                 commentOrder : '@', // comment order asc|desc
                 activeCommentId : '@' // specific comment id
             },            
-            //templateUrl: 'test/fixtures/123'
-			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>'
-			               
-
-
-        };
+            // templateUrl: 'test/fixtures/123'
+			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>'
+			        };
     }
 
     function rgImageComments() {
         return {
             restrict: 'E',
             controller : CommentsController,
-            //templateUrl: 'test/fixtures/123',
-			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>',
-     							
-            scope : {
+            // templateUrl: 'test/fixtures/123',
+			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>',
+			            scope : {
                 target : '=',
                 showCommentBox : '=',
                 commentType : '@', // string feed,image,media

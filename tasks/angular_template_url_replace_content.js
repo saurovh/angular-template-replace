@@ -78,37 +78,38 @@ module.exports = function(grunt) {
                     console.log("template not found");
                     minified = path;
                   }
-                  slash = slash ? "" : "//";
+                  slash = slash ? "" : "// ";
                   return slash + match + '\n\r\t\t\ttemplate :  \''+minified + '\''+(coma || "")+newline;
                 });
               return r_str;
         });
 
+       var newline;
+        str = str.replace(regexw,function(match,space,content,escapedbnit,coma,newline){
+          newline = newline;
+             return "";
+        });
 
-       //  str = str.replace(regexw,function(match,space,content,escapedbnit,coma,newline){
-       //    newline = newline;
-       //       return "";
-       //  });
-       //  newline = newline || "";
-       // str = str.replace(regex,function(match,slash,space,space2,path,coma){
-       //    var template,minified;
-       //    try {
-       //      template = grunt.file.read(path);
-       //       minified = escapeString(minify(template, {
-       //        preventAttributesEscaping: true,
-       //        collapseWhitespace: true
-       //      }));
-       //    }catch(e){
-       //      console.log("template not found");
-       //      minified = path;
-       //    }
-       //    slash = slash ? "" : "//";
-       //    return slash + match + '\n\r\t\t\ttemplate :  \''+minified + '\''+(coma || "")+newline;
-       //  });
-        console.log(str);
+            newline = newline || "";
+       str = str.replace(regex,function(match,slash,space,space2,path,coma){
+          var template,minified;
+          try {
+            template = grunt.file.read(path);
+             minified = escapeString(minify(template, {
+              preventAttributesEscaping: true,
+              collapseWhitespace: true
+            }));
+          }catch(e){
+            console.log("template not found");
+            minified = path;
+          }
+          slash = slash ? "" : "// ";
+          return slash + match + '\n\r\t\t\ttemplate :  \''+minified + '\''+(coma || "")+newline;
+        });
+        // console.log(str);
       // // Write the destination file.
       if(destination){
-        //grunt.file.write(destination, str);  
+        grunt.file.write(destination, str);  
       }
       
 
