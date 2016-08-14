@@ -1,0 +1,14 @@
+function rgImageComments() {
+        return {
+            restrict: 'E',
+            controller : CommentsController,
+            scope : {
+                target : '=',
+                showCommentBox : '=',
+                commentType : '@', // string feed,image,media
+                commentOrder : '@', // comment order asc|desc
+                activeCommentId : '@' // specific comment id
+            },
+            templateUrl: '<div class="feed_comment"></div>'
+        };
+    }
