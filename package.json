@@ -1,23 +1,23 @@
 {
-  "name": "angular-template-url-replace-content",
+  "name": "angular-template-replace",
   "description": "this for replacing angular templateUrl : '/path/to/template' to its content like template : 'html cotent'",
   "version": "0.1.0",
-  "homepage": "https://github.com/fisherman/gruntplugin",
+  "homepage": "https://github.com/saurvoh/angular-template-replace",
   "author": {
     "name": "Fisherman",
-    "email": "sadequl@ipvision-inc.com"
+    "email": "msi.saurovh@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fisherman/gruntplugin.git"
+    "url": "git://github.com/saurvoh/angular-template-replace.git"
   },
   "bugs": {
-    "url": "https://github.com/fisherman/gruntplugin/issues"
+    "url": "https://github.com/saurvoh/angular-template-replace/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/fisherman/gruntplugin/blob/master/LICENSE-MIT"
+      "url": "https://github.com/saurvoh/angular-template-replace/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
