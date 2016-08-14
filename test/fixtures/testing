@@ -4,7 +4,7 @@ function rgImageComments() {
             controller : CommentsController,
             // templateUrl: 'test/fixtures/123',
 			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>',
-						scope : {
+			            scope : {
                 target : '=',
                 showCommentBox : '=',
                 commentType : '@', // string feed,image,media
@@ -30,7 +30,7 @@ function rgImageComments() {
             },            
             // templateUrl: 'test/fixtures/123'
 			template :  '<div class="\'feed_comment\'">asdasdasd\' asdhasd asdasd\' ,</div>'
-			        };
+						        };
     }
 
     function rgImageComments() {

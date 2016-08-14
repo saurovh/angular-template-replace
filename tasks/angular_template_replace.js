@@ -20,7 +20,7 @@ var minify = require('html-minifier').minify;
 module.exports = function(grunt) {
 
 
-  grunt.registerMultiTask('angular-template-url-replace-content', 'this for replacing angular templateUrl : \'/path/to/template\' to its content like template : \'html cotent\'', function() {
+  grunt.registerMultiTask('angular-template-replace', 'this for replacing angular templateUrl : \'/path/to/template\' to its content like template : \'html cotent\'', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       punctuation: '.',
